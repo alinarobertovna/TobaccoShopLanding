@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display&family=Poppins:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display&family=Poppins:wght@400;500;700&display=swap');
+
+.header-title {
+    @apply text-2xl font-bold mb-6;
+    font-family: Instrument Serif;
+    font-size: 300%;
+    font-weight: 300;
+    color: white;
+}
+
+.header-text {
+    @apply mt-2;
+    font-family: Poppins;
+    font-size: 100%;
+    font-weight: 100;
+    color: white;
+}
