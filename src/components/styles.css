@@ -3,15 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display&family=Poppins:wght@400;500;700&display=swap');
 
 .header-title {
-    @apply text-2xl font-bold mb-6;
+    @apply text-base md:text-xl lg:text-2xl leading-tight;
     font-family: Instrument Serif;
     font-size: 300%;
     font-weight: 300;
     color: white;
+    margin-bottom: 1.5rem;
 }
 
 .header-text {
-    @apply mt-2;
+    @apply text-sm md:text-lg lg:text-xl leading-normal;
     font-family: Poppins;
     font-size: 100%;
     font-weight: 100;
