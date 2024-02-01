@@ -1,10 +1,12 @@
-import HeaderAbout from "./components/Header";
+import Header from "./components/Header";
+import Products from "./components/Products";
 
 
 function App() {
   return (
     <div className="App">
-      <HeaderAbout />
+      <Header />
+      <Products />
     </div>
   );
 }
