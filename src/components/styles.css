@@ -3,19 +3,39 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display&family=Poppins:wght@400;500;700&display=swap');
 
 /* Header.css */
+.header-wrapper {
+    @apply bg-white shadow-md;
+}
+
+.main-container {
+    @apply container mx-auto px-6 md:px-12 py-3;
+}
+
+.logo-container {
+    @apply flex justify-between items-center;
+}
+
+.nav-link {
+    @apply text-gray-800 hover:text-gray-600 px-4 py-2 block md:inline-block;
+}
+
+.search-icon {
+    @apply text-gray-800 hover:text-gray-600 px-4 py-2;
+}
 .search-input {
+    @apply ml-4 px-4 py-2 border outline-0 rounded-md;
     transition: width 0.3s ease-out, opacity 0.3s ease-out;
     width: 0;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
-  }
+}
   
-  .search-input-open {
+.search-input-open {
     width: 200px;
     opacity: 1;
     visibility: visible;
-  }
+}
   
 
   

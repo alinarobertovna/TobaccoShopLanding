@@ -7,11 +7,10 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
-      <nav className="container mx-auto px-6 md:px-12 py-3">
-        <div className="flex justify-between items-center">
+    <header className="header-wrapper">
+      <nav className="main-container">
+        <div className="logo-container">
           <div className="flex items-center">
-            {/* Logo */}
             <img src="./logo.png" alt="Logo" className="h-24" />
           </div>
 
@@ -24,34 +23,31 @@ const Header = () => {
 
           {/* Navigation Links */}
           <div className={`md:flex items-center ${isMenuOpen ? 'block' : 'hidden'}`}>
-            <a href="/link1" className="text-gray-800 hover:text-gray-600 px-4 py-2 block md:inline-block">
+            <a href="/link1" className="nav-link">
               Link 1
             </a>
-            <a href="/link2" className="text-gray-800 hover:text-gray-600 px-4 py-2 block md:inline-block">
+            <a href="/link2" className="nav-link">
               Link 2
             </a>
-            <a href="/link3" className="text-gray-800 hover:text-gray-600 px-4 py-2 block md:inline-block">
+            <a href="/link3" className="nav-link">
               Link 3
             </a>
-            <a href="/link4" className="text-gray-800 hover:text-gray-600 px-4 py-2 block md:inline-block">
+            <a href="/link4" className="nav-link">
               Link 4
             </a>
 
-            {/* Shopping Cart */}
-            <a href="/cart" className="text-gray-800 hover:text-gray-600 px-4 py-2 block md:inline-block">
+            <a href="/cart" className="nav-link">
               <ShoppingCartIcon className="h-6 w-6" />
             </a>
 
-            {/* Search Icon */}
-            <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="text-gray-800 hover:text-gray-600 px-4 py-2">
+            <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="search-icon">
               <MagnifyingGlassIcon className="h-6 w-6" />
             </button>
 
-            {/* Search Input */}
             <input
               type="text"
               placeholder="Search..."
-              className={`ml-4 px-4 py-2 border rounded-md search-input ${isSearchOpen ? 'search-input-open' : ''}`}
+              className={`search-input ${isSearchOpen ? 'search-input-open' : ''}`}
             />
           </div>
         </div>
