@@ -40,7 +40,7 @@
 /* Banner.css */
 .banner-container {
     @apply bg-cover bg-center h-96 relative text-white;
-    background-image: url('/public/guy2.jpg');
+    /*background-image: url('/public/guy.jpg');*/
 }
 
 .banner-overlay {
