@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import PromoBanner from "./components/Banner";
 import AboutUsSection from "./components/About";
+import Bestsellers from "./components/Bestsellers";
 
 function App() {
   const slides = [
@@ -24,6 +25,7 @@ function App() {
       <PromoBanner slides={slides} />
       <AboutUsSection />
       <Products />
+      <Bestsellers />
     </div>
   );
 }
