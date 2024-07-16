@@ -3,6 +3,7 @@ import Products from "./components/Products";
 import PromoBanner from "./components/Banner";
 import AboutUsSection from "./components/About";
 import Bestsellers from "./components/Bestsellers";
+import Blog from "./components/Blog";
 
 function App() {
   const slides = [
@@ -26,6 +27,7 @@ function App() {
       <AboutUsSection />
       <Products />
       <Bestsellers />
+      <Blog />
     </div>
   );
 }
