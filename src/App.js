@@ -4,6 +4,7 @@ import PromoBanner from "./components/Banner";
 import AboutUsSection from "./components/About";
 import Bestsellers from "./components/Bestsellers";
 import Blog from "./components/Blog";
+import CustomerReviews from "./components/CustomerReviews";
 
 function App() {
   const slides = [
@@ -28,6 +29,7 @@ function App() {
       <Products />
       <Bestsellers />
       <Blog />
+      <CustomerReviews />
     </div>
   );
 }
